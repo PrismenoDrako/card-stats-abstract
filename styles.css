@@ -39,8 +39,9 @@ main{
 .card{
     width: 100%;
     max-width: 450px;
-    background-color: #6e1283;
-    /* background-color: var(--dark-desaturated-blue); */
+    /* background-color: #6e1283; */
+    /* background-color: hsl(277, 64%, 61%); */
+    background-color: var(--dark-desaturated-blue);
     color: var(--white-stats);
     border-radius: 0.8rem;
     overflow: hidden;
@@ -50,12 +51,23 @@ main{
 }
 
 
+.image-container{
+    display: block;
+    width: 100%;
+
+    background-color: hsl(277, 64%, 61%);
+}
+
+
 
 .card--image{
+    display: block;
     width: 100%;
-    height: 100%;
-    opacity: 0.60;
-    content: url('./images/image-header-mobile.jpg');
+    min-height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 0.80;
+    /* content: url('./images/image-header-mobile.jpg'); */
     
 }
 
@@ -113,7 +125,7 @@ main{
 }
 
 
-@media(min-width: 1130px){
+@media(min-width: 1200px){
     .card{
         flex-direction: row-reverse;
         max-width: 1140px;
@@ -121,7 +133,7 @@ main{
     }
 
     .card--image{
-        content: url('./images/image-header-desktop.jpg');
+        /* content: url('./images/image-header-desktop.jpg'); */
         height: 100%;
         width: auto;
         

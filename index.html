@@ -19,7 +19,13 @@
   <main>
     <div class="card">
 
-      <img src="./images/image-header-mobile.jpg" alt="" class="card--image">
+      <div class="image-container">
+        <picture>
+          <source srcset="./images/image-header-desktop.jpg" media="(min-width: 1200px)">
+          <img src="./images/image-header-mobile.jpg" alt="" class="card--image">
+         </picture>
+      </div>
+
         
       <div class="card--summary">
         <p class="card--summary--title">Get <span class="highlighter">insights</span> that help your business grow.</p>
